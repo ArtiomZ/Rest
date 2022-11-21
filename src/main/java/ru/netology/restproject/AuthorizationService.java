@@ -1,20 +1,18 @@
 package ru.netology.restproject;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Configuration
 @Service
 public class AuthorizationService {
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public AuthorizationService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    List<Authorities> getAuthorities(String user, String password) {
+    public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {
             throw new InvalidCredentials("User name or password is empty");
         }

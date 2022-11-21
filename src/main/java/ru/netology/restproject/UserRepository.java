@@ -1,13 +1,12 @@
 package ru.netology.restproject;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Repository;
+import ru.netology.restproject.Authorities;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-@Configuration
 @Repository
 public class UserRepository {
 

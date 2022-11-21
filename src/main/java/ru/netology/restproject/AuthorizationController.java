@@ -1,10 +1,7 @@
 package ru.netology.restproject;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,17 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@Configuration
-@Controller
 public class AuthorizationController {
 
-    AuthorizationService service;
+    private final AuthorizationService service;
 
     public AuthorizationController(AuthorizationService service) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
-        );
-        this.service = context.getBean("service", AuthorizationService.class);
+        this.service = service;
     }
 
     @GetMapping("/authorize")
