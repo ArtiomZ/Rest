@@ -1,6 +1,10 @@
-package ru.netology.restproject;
+package ru.netology.restproject.AuthorizationService;
 
 import org.springframework.stereotype.Service;
+import ru.netology.restproject.Authorities.Authorities;
+import ru.netology.restproject.InvalidCredentials.InvalidCredentials;
+import ru.netology.restproject.UnauthorizedUser.UnauthorizedUser;
+import ru.netology.restproject.UserRepository.UserRepository;
 
 import java.util.List;
 

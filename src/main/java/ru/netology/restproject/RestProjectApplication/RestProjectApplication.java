@@ -1,4 +1,4 @@
-package ru.netology.restproject;
+package ru.netology.restproject.RestProjectApplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

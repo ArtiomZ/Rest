@@ -1,4 +1,4 @@
-package ru.netology.restproject;
+package ru.netology.restproject.AuthorizationController;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import ru.netology.restproject.Authorities.Authorities;
+import ru.netology.restproject.AuthorizationService.AuthorizationService;
+import ru.netology.restproject.InvalidCredentials.InvalidCredentials;
+import ru.netology.restproject.UnauthorizedUser.UnauthorizedUser;
 
 import java.util.List;
 
