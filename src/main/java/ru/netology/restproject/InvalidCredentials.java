@@ -1,4 +1,4 @@
-package ru.netology.restproject.InvalidCredentials;
+package ru.netology.restproject;
 
 public class InvalidCredentials extends RuntimeException {
     public InvalidCredentials(String msg) {

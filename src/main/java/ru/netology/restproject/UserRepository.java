@@ -1,7 +1,7 @@
-package ru.netology.restproject.UserRepository;
+package ru.netology.restproject;
 
 import org.springframework.stereotype.Repository;
-import ru.netology.restproject.Authorities.Authorities;
+import ru.netology.restproject.Authorities;
 
 import java.util.ArrayList;
 import java.util.List;
